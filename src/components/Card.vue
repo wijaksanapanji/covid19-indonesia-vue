@@ -22,6 +22,8 @@ export default {
   padding: 1rem 3rem;
   border-radius: 10px;
   margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   color: #ffffff;
 }
 
@@ -38,8 +40,8 @@ export default {
 }
 
 .card-icon {
-  width: 100px;
-  height: 100px;
+  width: 72px;
+  height: 72px;
   margin-right: 2rem;
 }
 

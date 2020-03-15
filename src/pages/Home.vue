@@ -7,19 +7,30 @@
       <Card icon="death.png" status="death" :data="deaths" />
     </div>
     <div class="source">
-      <p>Data didapatkan dari :</p>
-      <a href="https://covid19.mathdro.id/api">https://covid19.mathdro.id/api</a>
+      <p>
+        Data didapatkan dari :
+        <a
+          href="https://covid19.mathdro.id/api"
+        >https://covid19.mathdro.id/api</a>
+      </p>
+    </div>
+    <div class="map-container">
+      <h1>Kasus COVID-19 di Seluruh dunia</h1>
+      <p>Klik untuk melihat detail</p>
+      <Map />
     </div>
   </div>
 </template>
 
 <script>
 import Card from "../components/Card";
+import Map from "../components/Map";
 
 export default {
   name: "Home",
   components: {
-    Card
+    Card,
+    Map
   },
   data() {
     return {
@@ -51,11 +62,29 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 0.5rem;
+  margin: 1rem;
+}
+
+.card-container {
+  display: flex;
+  max-width: 900px;
 }
 
 .title,
 .source {
   text-align: center;
+}
+
+.map-container {
+  height: 400px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
 }
 </style>
