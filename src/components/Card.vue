@@ -20,7 +20,7 @@ export default {
   display: flex;
   align-items: center;
   padding: 1rem 3rem;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-bottom: 1rem;
   margin-right: 1rem;
   margin-left: 1rem;

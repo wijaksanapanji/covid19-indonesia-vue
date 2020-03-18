@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <img src="../assets/logo.png" alt="Logo STMIK Primakara" class="logo" />
     <h1 class="title">Kasus COVID-19 Indonesia</h1>
     <div class="card-container">
       <Card icon="check.png" status="confirmed" :data="confirmed" />
@@ -58,6 +59,11 @@ export default {
 </script>
 
 <style scoped>
+.logo {
+  width: 200px;
+  height: auto;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -79,7 +85,7 @@ export default {
   height: 400px;
   width: 100%;
   max-width: 1000px;
-  margin: 2rem;
+  margin: 0 2rem 2rem 2rem;
 }
 
 @media screen and (max-width: 768px) {
